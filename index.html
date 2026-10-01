@@ -17,7 +17,7 @@ nav{display:flex;gap:24px}nav a{color:#aaa;text-decoration:none;font-size:14px}n
 table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}th,td{padding:16px;border-bottom:1px solid var(--line);text-align:left}th{color:#777;font-size:11px;text-transform:uppercase;letter-spacing:1px}tr:last-child td{border:0}.rank{font-weight:900;color:#777;width:60px}.player{font-weight:800}.sub{display:block;color:#666;font-size:11px;margin-top:3px}.tier{display:inline-block;padding:5px 9px;border-radius:6px;font-weight:900;font-size:11px}.bronze{background:#4b3022;color:#e9b28f}.silver{background:#333;color:#ddd}.gold{background:#4b3c10;color:#ffd95a}.diamond{background:#123b45;color:#62e9ff}.ruby{background:#48121b;color:#ff6572}
 .cards{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.card{background:var(--panel);border:1px solid var(--line);padding:18px;border-radius:10px}.card b{display:block;margin-bottom:8px}.card small{color:#777}.card.ruby{border-color:#6e1b27}
 footer{text-align:center;color:#555;border-top:1px solid var(--line);padding:28px;font-size:12px}
-@media(max-width:750px){header{padding:0 18px}nav{gap:10px}nav a:nth-child(3){display:none}.cards{grid-template-columns:1fr 1fr}.cards .card:last-child{grid-column:span 2}th:nth-child(4),td:nth-child(4){display:none}}
+@media(max-width:750px){header{padding:0 18px}nav{gap:10px}nav a:nth-child(3){display:none}.cards{grid-template-columns:1fr 1fr}.cards .card:last-child{grid-column:span 2}th:nth-child(5),td:nth-child(5){display:none}}
 </style>
 </head>
 <body>
@@ -39,14 +39,18 @@ footer{text-align:center;color:#555;border-top:1px solid var(--line);padding:28p
 <section id="ranking">
   <div class="section-title"><h2>Global Ranking</h2><span>SEASON 1 • BETA</span></div>
   <table>
-    <thead><tr><th>#</th><th>Jogador</th><th>Tier</th><th>Rating</th></tr></thead>
+    <thead><tr><th>#</th><th>Jogador</th><th>Tier</th><th>Vitórias</th><th>Finals</th></tr></thead>
     <tbody>
-      <tr><td class="rank">01</td><td class="player">Nexxus<span class="sub">32W — 8L</span></td><td><span class="tier ruby">RUBY I</span></td><td>1,842</td></tr>
-      <tr><td class="rank">02</td><td class="player">Kauan7<span class="sub">29W — 10L</span></td><td><span class="tier diamond">DIAMOND I</span></td><td>1,776</td></tr>
-      <tr><td class="rank">03</td><td class="player">RafaBW<span class="sub">27W — 12L</span></td><td><span class="tier diamond">DIAMOND II</span></td><td>1,701</td></tr>
-      <tr><td class="rank">04</td><td class="player">Lukzin<span class="sub">24W — 13L</span></td><td><span class="tier gold">GOLD I</span></td><td>1,638</td></tr>
-      <tr><td class="rank">05</td><td class="player">Mikael<span class="sub">22W — 15L</span></td><td><span class="tier gold">GOLD II</span></td><td>1,581</td></tr>
-      <tr><td class="rank">06</td><td class="player">Voidzin<span class="sub">18W — 16L</span></td><td><span class="tier silver">SILVER I</span></td><td>1,462</td></tr>
+      <tr><td class="rank">01</td><td class="player">Satturnni <span class="sub">ySattz</span></td><td><span class="tier ruby">RUBY I</span></td><td>69.687</td><td>306.557</td></tr>
+      <tr><td class="rank">02</td><td class="player">zangdroid</td><td><span class="tier ruby">RUBY II</span></td><td>42.240</td><td>188.868</td></tr>
+      <tr><td class="rank">03</td><td class="player">H1iiro</td><td><span class="tier ruby">RUBY VI</span></td><td>30.313</td><td>133.596</td></tr>
+      <tr><td class="rank">04</td><td class="player">afleck</td><td><span class="tier ruby">RUBY VI</span></td><td>28.766</td><td>138.668</td></tr>
+      <tr><td class="rank">05</td><td class="player">Infinitizada</td><td><span class="tier ruby">RUBY V</span></td><td>24.607</td><td>91.939</td></tr>
+      <tr><td class="rank">06</td><td class="player">Chapeey</td><td><span class="tier diamond">DIAMOND I</span></td><td>31.807</td><td>106.370</td></tr>
+      <tr><td class="rank">07</td><td class="player">Luveut</td><td><span class="tier diamond">DIAMOND III</span></td><td>25.373</td><td>101.567</td></tr>
+      <tr><td class="rank">08</td><td class="player">fgv</td><td><span class="tier diamond">DIAMOND III</span></td><td>23.640</td><td>102.559</td></tr>
+      <tr><td class="rank">09</td><td class="player">linezmobreki</td><td><span class="tier diamond">DIAMOND V</span></td><td>16.794</td><td>74.919</td></tr>
+      <tr><td class="rank">10</td><td class="player">vwtor</td><td><span class="tier gold">GOLD I</span></td><td>16.786</td><td>72.543</td></tr>
     </tbody>
   </table>
 </section>
