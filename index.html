@@ -14,12 +14,12 @@ nav{display:flex;gap:24px}nav a{color:#aaa;text-decoration:none;font-size:14px}n
 .kicker{color:var(--red);font-weight:800;letter-spacing:3px;font-size:12px}.hero h1{font-size:clamp(42px,8vw,82px);margin:12px 0 4px;letter-spacing:-4px}.hero p{color:var(--muted);max-width:600px;margin:0 auto 28px;line-height:1.6}
 .btn{display:inline-block;background:var(--red);color:#fff;padding:13px 22px;border-radius:8px;text-decoration:none;font-weight:800}.btn.alt{background:#171717;border:1px solid var(--line);margin-left:8px}
 .wrap{max-width:1100px;margin:auto;padding:20px 24px 70px}.section-title{display:flex;align-items:end;justify-content:space-between;margin:30px 0 16px}.section-title h2{margin:0;font-size:24px}.section-title span{color:var(--muted);font-size:12px}
-table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}th,td{padding:16px;border-bottom:1px solid var(--line);text-align:left}th{color:#777;font-size:11px;text-transform:uppercase;letter-spacing:1px}tr:last-child td{border:0}.rank{font-weight:900;color:#777;width:60px}.player{font-weight:800}.sub{display:block;color:#666;font-size:11px;margin-top:3px}.tier{display:inline-block;padding:5px 9px;border-radius:6px;font-weight:900;font-size:11px}.bronze{background:#4b3022;color:#e9b28f}.silver{background:#333;color:#ddd}.gold{background:#4b3c10;color:#ffd95a}.diamond{background:#123b45;color:#62e9ff}.ruby{background:#48121b;color:#ff6572}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}th,td{padding:16px;border-bottom:1px solid var(--line);text-align:left}th{color:#777;font-size:11px;text-transform:uppercase;letter-spacing:1px}tr:last-child td{border:0}.rank{font-weight:900;color:#777;width:60px}.player{font-weight:800}.sub{display:block;color:#666;font-size:11px;margin-top:3px}.tier{display:inline-block;padding:5px 9px;border-radius:6px;font-weight:900;font-size:11px}.bronze{background:#4b3022;color:#e9b28f}.silver{background:#333;color:#ddd}.gold{background:#4b3c10;color:#ffd95a}.diamond{background:#123b45;color:#62e9ff}.ruby{background:#48121b;color:#ff6572}.grandmaster{background:#f5f5f5;color:#090909}.gm-row{background:linear-gradient(90deg,#241d08,#101010)}
 .cards{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.card{background:var(--panel);border:1px solid var(--line);padding:18px;border-radius:10px}.card b{display:block;margin-bottom:8px}.card small{color:#777}.card.ruby{border-color:#6e1b27}
 footer{text-align:center;color:#555;border-top:1px solid var(--line);padding:28px;font-size:12px}
 @media(max-width:750px){header{padding:0 18px}nav{gap:10px}nav a:nth-child(3){display:none}.cards{grid-template-columns:1fr 1fr}.cards .card:last-child{grid-column:span 2}th:nth-child(5),td:nth-child(5){display:none}}
 </style>
-</head>
+<style>.gm-row{background:linear-gradient(90deg,#241d08,#101010)}</style></head>
 <body>
 <header>
   <div class="brand"><img src="bwl-logo.png" alt="BWL"><span>BWL</span></div>
@@ -56,13 +56,37 @@ footer{text-align:center;color:#555;border-top:1px solid var(--line);padding:28p
 </section>
 
 <section id="tiers">
-  <div class="section-title"><h2>BWL Tiers</h2><span>V → I</span></div>
-  <div class="cards">
-    <div class="card"><b>🥉 BRONZE</b><small>Bronze V • IV • III • II • I</small></div>
-    <div class="card"><b>🥈 SILVER</b><small>Silver V • IV • III • II • I</small></div>
-    <div class="card"><b>🥇 GOLD</b><small>Gold V • IV • III • II • I</small></div>
-    <div class="card"><b>💎 DIAMOND</b><small>Diamond V • IV • III • II • I</small></div>
-    <div class="card ruby"><b>♦ RUBY</b><small>Ruby V • IV • III • II • I</small></div>
+  <div class="section-title"><h2>BWL Tiers</h2><span>RANKS POR VITÓRIAS • SEM SOBREPOSIÇÃO</span></div>
+  <div class="card">
+    <table>
+      <thead><tr><th>Vitórias</th><th>Tier</th></tr></thead>
+      <tbody><tr><td>1–4</td><td><span class="tier bronze">BRONZE V</span></td></tr>
+<tr><td>5–9</td><td><span class="tier bronze">BRONZE IV</span></td></tr>
+<tr><td>10–14</td><td><span class="tier bronze">BRONZE III</span></td></tr>
+<tr><td>15–19</td><td><span class="tier bronze">BRONZE II</span></td></tr>
+<tr><td>20–29</td><td><span class="tier bronze">BRONZE I</span></td></tr>
+<tr><td>30–49</td><td><span class="tier silver">SILVER V</span></td></tr>
+<tr><td>50–59</td><td><span class="tier silver">SILVER IV</span></td></tr>
+<tr><td>60–69</td><td><span class="tier silver">SILVER III</span></td></tr>
+<tr><td>70–79</td><td><span class="tier silver">SILVER II</span></td></tr>
+<tr><td>80–99</td><td><span class="tier silver">SILVER I</span></td></tr>
+<tr><td>100–149</td><td><span class="tier gold">GOLD V</span></td></tr>
+<tr><td>150–199</td><td><span class="tier gold">GOLD IV</span></td></tr>
+<tr><td>200–299</td><td><span class="tier gold">GOLD III</span></td></tr>
+<tr><td>300–499</td><td><span class="tier gold">GOLD II</span></td></tr>
+<tr><td>500–749</td><td><span class="tier gold">GOLD I</span></td></tr>
+<tr><td>750–999</td><td><span class="tier diamond">DIAMOND V</span></td></tr>
+<tr><td>1.000–1.499</td><td><span class="tier diamond">DIAMOND IV</span></td></tr>
+<tr><td>1.500–1.999</td><td><span class="tier diamond">DIAMOND III</span></td></tr>
+<tr><td>2.000–2.499</td><td><span class="tier diamond">DIAMOND II</span></td></tr>
+<tr><td>2.500–2.999</td><td><span class="tier diamond">DIAMOND I</span></td></tr>
+<tr><td>3.000–4.999</td><td><span class="tier ruby">RUBY V</span></td></tr>
+<tr><td>5.000–9.999</td><td><span class="tier ruby">RUBY IV</span></td></tr>
+<tr><td>10.000–14.999</td><td><span class="tier ruby">RUBY III</span></td></tr>
+<tr><td>15.000–19.999</td><td><span class="tier ruby">RUBY II</span></td></tr>
+<tr><td>20.000–49.999</td><td><span class="tier ruby">RUBY I</span></td></tr>
+<tr><td>50.000+</td><td><span class="tier grandmaster">GRANDMASTER</span></td></tr></tbody>
+    </table>
   </div>
 </section>
 
